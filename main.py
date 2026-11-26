@@ -29,8 +29,9 @@ def main() -> None:
     os.makedirs(OUT_DIR, exist_ok=True)
     shutil.copyfile(SRC, OUT)
     if _digest(OUT) != _digest(SRC):
-        raise SystemExit("entry.png copy failed verification")
-    print(f"wrote {OUT} ({os.path.getsize(OUT)} bytes, sha256 verified)")
+        raise SystemExit("entry.png copy failed verification: sha256 mismatch")
+    digest = _digest(OUT)
+    print(f"wrote {OUT} ({os.path.getsize(OUT)} bytes, sha256 {digest[:16]}...)")
 
 
 if __name__ == "__main__":
