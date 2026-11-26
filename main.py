@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""make.fun news-image-20261125 entry.
+"""make.fun news-image-20261125 entry (v2).
 
 Writes the bundled front-page image to /output/entry.png.
+The image itself was composed by build_entry.py from the text-free
+illustrations in assets/, with all headlines typeset programmatically.
 Deterministic: the same bytes on every run, no network access.
 After copying, the output is read back and verified byte-for-byte
 against the bundled image, so a partial or corrupted write fails

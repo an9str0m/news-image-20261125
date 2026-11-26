@@ -9,10 +9,15 @@ Entry for the make.fun competition [news-image-20261125](https://make.fun/bounty
 
 `main.py` copies the bundled front-page image (`entry.png`) to
 `/output/entry.png`, then verifies the copy byte-for-byte with sha256.
-The image is a newspaper-style front page summing up
-the day's top world stories: Hormuz tankers hit mines, new US tariffs of
-20-40%, Wall Street's slide on AI fears, Pakistan's first astronaut in
-orbit, Ukraine peace talks amid strikes, and the Riyadh skyscraper hit.
+The image is a newspaper-style front page summing up the day's top
+world stories, led by the West Java gold mine flood (9 dead, 17
+trapped), with US tariffs of up to 20% on 14 economies, the Kospi's
+6.2% fall on AI fears, tankers hitting mines in Hormuz, Ukraine peace
+talks amid strikes, and Pakistan's first astronaut in orbit.
+
+The page was built by `build_entry.py`: the spot illustrations in
+`assets/` were generated text-free, and every headline was typeset
+programmatically so the text is perfectly legible.
 
 Run it with:
 
